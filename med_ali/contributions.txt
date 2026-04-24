@@ -1,0 +1,23 @@
+Projet : Système de Gestion et de Classement des Étudiants
+Mohamed Ali ALAOUI
+
+RÉPARTITION DÉTAILLÉE DES TÂCHES
+1. Architecture Logicielle & POO
+•	Modélisation Abstraite : Conception de la classe parente Personne pour isoler les données d'identité.
+•	Spécialisation & Contrats : Implémentation de la classe Etudiant et de l'interface Evaluable pour garantir une logique de calcul normalisée.
+•	Encapsulation stricte : Protection des données via des attributs privés et utilisation de collections dynamiques (ArrayList) pour une gestion mémoire optimale.
+•	Flexibilité (DIP) : Mise en place d'une interface de sauvegarde pour découpler la logique métier du support de stockage.
+
+2. Logique Métier & Algorithmie
+•	Agrégation des données : Développement de l'algorithme de calcul de moyenne globale sur des volumes de notes variables.
+•	Ordonnancement personnalisé : Création d'un Comparator dédié pour automatiser le tri décroissant, transformant une liste brute en un classement scolaire cohérent.
+
+3. Ingénierie des Flux (I/O)
+•	Lecture et Analyse : Développement d'un moteur de lecture capable de transformer du texte brut en objets Java "vivants".
+•	Intelligence de traitement : Algorithme de dédoublonnement lors de la lecture pour regrouper les notes d'un même étudiant éparpillées dans le fichier source.
+•	Sauvegarde des données : Automatisation de l'exportation des résultats vers un fichier de sortie formaté.
+
+4. Qualité Logicielle & Fiabilité
+•	Sécurisation des saisies : Nettoyage du buffer du Scanner et validation par expressions logiques pour empêcher les caractères invalides (chiffres dans les noms).
+•	Résilience (Try-Catch) : Gestion proactive des exceptions pour garantir que le programme reste stable face à un fichier manquant ou une erreur de formatage.
+•	Versionnage : Documentation technique et déploiement du code source sur GitHub avec suivi des modifications.
